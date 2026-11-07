@@ -1,0 +1,42 @@
+/*Modelo RGB*/
+.rgb{
+    background-color: rgb(219,70,70);
+    color: rgb(48, 24, 24);
+}
+.rgb h3{
+    color: rgb(0, 0, 0);
+}
+/*Modelo RGBA*/
+.rgba{
+    background-color: rgba(1,100,10, 5);
+    color: rgba(48, 1, 24, 1);
+}
+.hex{
+    background-color: #0f0f49;
+    color: #dfc6c6;
+}
+.hsl {
+    background-color: hsl(59, 41%, 50%);
+    color: hsl(50, 50%, 91%);
+}
+.hsla {
+    background-color: hsla(100, 68%, 41%, 50%);
+    color: hsl(50, 50%, 91%);
+}
+/*Colores multinavegador*/
+.black{
+    color: black;
+}
+.white{
+    background-color: black;
+    color: white;
+}
+.salmon{
+    color: salmon;
+}
+.blue{
+    color: blue;
+}
+.lime{
+    color: lime
+}
