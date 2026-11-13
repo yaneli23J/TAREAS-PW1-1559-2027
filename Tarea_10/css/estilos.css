@@ -1,0 +1,36 @@
+.fondo-freddy{
+    /*Background-image: permite agregar imagenes como fondo de un elemento o de un contorno
+    y tambien  se puede agregar gradiantes*/
+    background-image: linear-gradient(to top, rgba(238, 130, 238, 0.516), rgba(128, 128, 128, 0.574)), url(../imagenes/freddy.jpg);
+
+    /*background-size (cover, contain, width(px)-heigth(px)
+    Especificar el tamaño de la imagen de fondo*/
+    background-size: cover;
+
+    /*Background-repeat (reapeat, no-repeat, repeat-x, repeat-y)
+    Aplica cuando su contenedor es mas pequeño que su contenedor */
+    background-repeat: no-repeat;
+
+    /* Background-Position (top, bottom, center, right, left)
+     establecer la posicion inicial de una imagen de fondo en su contenedor */
+    background-position: center;
+
+    /*Background-attchment(scroll y fixed)
+     Se  utiliza para que la imagen que de fija en su contenedor  cuando
+     un usuario de desplaza  por la pagina
+     */
+    background-attachment: fixed;
+
+    /*Porpiedades generales del contenedor*/
+    width: 900px;
+    height: 1000px;
+}
+
+.fondo-conjuro{
+    /*background: (image) (position)/ (size) (repeat) (attchement) (color) */
+
+    background: url("../imagenes/conjuro.jpeg") right/contain repeat scroll rgb(255, 255, 0.226);
+    width: 365px;
+    height: 547px;
+    border: 2px solid magenta;
+}
