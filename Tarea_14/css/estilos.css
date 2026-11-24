@@ -1,0 +1,159 @@
+html {
+    font-size: 10px; /* 1rem = 10px */
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    color: rebeccapurple;
+}
+
+#encabezado {
+    border: 0.2rem solid lemonchiffon;
+    font-size: 2rem;
+    position: sticky;
+    width: 100%;
+    z-index: 5;
+    top: 0;
+}
+
+.logo {
+    border: 0.2rem solid azure;
+    width: 20%;
+    height: 30rem;
+
+
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 45%;
+
+}
+
+#encabezado h1 {
+    text-align: center;
+    text-shadow: 0.2rem 0.2rem 0.5rem indigo;
+    position: absolute;
+    top: 10rem;
+    left: 30%;
+}
+
+
+#navegacion ul {
+    list-style-type: none;
+    padding-left: 0;
+    position:absolute;
+    top: 25%;
+    right: 15%;
+    border: 0.2rem solid red;
+    width: 25%;
+    text-align: center;
+    font-size: 3rem;
+
+
+}
+
+#navegacion ul li{
+    display: inline-block;
+}
+
+#elementos-posicionados {
+    border: 0.2rem solid green;
+    padding: 1rem;
+    position: relative;
+    height: 200rem;
+
+}
+
+.gato1 {
+    border: 0.2rem solid yellow;
+    width: 40rem;
+    height: 50rem;
+    margin: 0.5rem;
+    position: sticky;
+    top: 15rem;
+    z-index: 1;
+}
+.gato1 img{
+
+    width: 100%;
+    height: 100%;
+}
+
+.gato2 {
+    border: 0.2rem solid royalblue;
+    width: 40rem;
+    height: 50rem;
+    margin: 0.5rem;
+    position: absolute;
+    top: 0rem;
+    right: 0rem;
+    z-index: 2;
+}
+.gato2 img{
+
+    width: 100%;
+    height: 100%;
+}
+
+.gato3 {
+    border: 0.2rem solid salmon;
+    width: 40rem;
+    height: 50rem;
+    margin: 0.5rem;
+    position: absolute;
+    top: 28rem;
+    bottom: 0rem;
+    left: 0rem;
+    z-index: 2;
+
+}
+.gato3 img{
+
+    width: 100%;
+    height: 100%;
+}
+
+.gato4 {
+    border: 0.2rem solid green;
+    width: 40rem;
+    height: 50rem;
+    margin: 0.5rem;
+    position: absolute;
+    bottom: 0rem;
+    right: 0rem;
+
+}
+.gato4 img{
+
+    width: 100%;
+    height: 100%;
+}
+
+/*consulta de medios(media queries)
+Sive para definir los estilos o lementos html, segn el
+tamaño de la pantalla de nuestro diaositivo , gracias a esto
+se proporciona una herramienta que nos sirve para la creacion
+ de paginas web responsivas o daptables
+ si se define varias consultas de medios se debe poner en  fomra descendente
+ segu la medida del diapositivo
+ moviles(480px).Tables(480px-960px),PC(960px-1280px)
+ */
+ @media screen and (max-width: 930px) {
+     #encabezado h1 {
+         left: 25%;
+         font-size: 3rem;
+     }
+
+     .logo {
+         height: 22rem;
+
+     }
+
+
+
+ }
