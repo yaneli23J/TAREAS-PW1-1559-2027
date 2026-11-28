@@ -10,92 +10,80 @@ body {
     color: rebeccapurple;
 }
 
+
 #encabezado {
     border: 0.2rem solid lemonchiffon;
-    font-size: 2rem;
     padding: 1rem;
+    font-size: 2rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     justify-items: center;
     align-items: center;
-
 }
 
 .logo {
     border: 0.2rem solid azure;
-    width: 90%;
-    height: 50rem;
-    display: grid;
-    padding: 0.5rem;
     border-radius: 45%;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    justify-items: center;
-    align-items: center;
-
-
-
-
+    width: 60%;
+    height: 60%;
 }
 
 .logo img {
     width: 100%;
     height: 100%;
-    border-radius: 35%;
-
+    border-radius: 45%;
 }
+
 #encabezado h1 {
     text-align: center;
     text-shadow: 0.2rem 0.2rem 0.5rem indigo;
-
 }
-
 
 #navegacion ul {
     list-style-type: none;
     padding-left: 0;
     border: 0.2rem solid red;
     width: 100%;
+    text-align: center;
     font-size: 3rem;
-
-
-
-
+    display: flex;
+    gap: 1rem;
 }
 
-#navegacion ul li{
+#navegacion ul li {
     display: inline-block;
 }
 
-#contenedor-grid{
+
+#contenedor-grid {
     border: 0.2rem solid green;
     padding: 1rem;
+    height: 100rem;
+    /* primero se declara la propiedad grid */
     display: grid;
-    /* 1ro se declara la propiedad grid*/
-    /*delcarar las columnas y las filas de nuestra cuadricula, ambas aceptan las medidas fijas
-    y relativas (px en rem)*/
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* Declarar las columnas y las filas de nuestra cuadrícula
+       ambas aceptan las medidas fijas y relativas (px, rem, em, %,
+       auto y fr) */
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 50rem 50rem;
-   /*propiedades de la cuadricula , star,end,center, space-around, space between
-   ,space evelyn */
-    justify-content: center;
+    /* Propiedades de la cuadrícula (start, end, center, space-around,
+       space-between, space-evenly) */
+    justify-content: space-between;
     align-content: end;
-    /*propiedades de los objetos,( star,end,center, strech*/
+    /* Propiedades de los objetos grid (start, end, center, stretch) */
     justify-items: center;
-
-
+    align-items: end;
 }
-
 
 .gato1 {
     border: 0.2rem solid yellow;
     width: 20rem;
     height: 30rem;
     margin: 0.5rem;
+}
 
-.gato1 img{
-
+.gato1 img {
     width: 100%;
     height: 100%;
 }
@@ -105,11 +93,9 @@ body {
     width: 20rem;
     height: 30rem;
     margin: 0.5rem;
-    z-index: 2;
-
 }
-.gato2 img{
 
+.gato2 img {
     width: 100%;
     height: 100%;
 }
@@ -119,10 +105,9 @@ body {
     width: 20rem;
     height: 30rem;
     margin: 0.5rem;
-
 }
-.gato3 img{
 
+.gato3 img {
     width: 100%;
     height: 100%;
 }
@@ -133,94 +118,87 @@ body {
     height: 30rem;
     margin: 0.5rem;
 }
-.gato4 img{
 
+.gato4 img {
     width: 100%;
     height: 100%;
 }
 
-    #contenedor-grid2{
-        border: 0.2rem solid green;
-        padding: 1rem;
-        display: grid;
-        /* 1ro se declara la propiedad grid*/
-        /*delcarar las columnas y las filas de nuestra cuadricula, ambas aceptan las medidas fijas
-        y relativas (px en rem)*/
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 50rem 50rem;
-        /*propiedades de la cuadricula , star,end,center, space-around, space between
-        ,space evelyn */
-        justify-content: center;
-        align-content: end;
-        /*propiedades de los objetos,( star,end,center, strech*/
-        justify-items: center;
 
+.contenedor-grid2 {
+    border: 0.2rem solid green;
+    padding: 1rem;
+    height: 100rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto;
+}
 
+.gato1-2 {
+    border: 0.2rem solid yellow;
+    width: 20rem;
+    height: 30rem;
+    margin: 0.5rem;
+    grid-column: 1 / 3;
+    /* de la línea 1 a la 3 (2 columnas) */
+}
 
+.gato1-2 img {
+    width: 100%;
+    height: 100%;
+}
+
+s.gato2-2 {
+    border: 0.2rem solid royalblue;
+    width: 20rem;
+    height: 30rem;
+    margin: 0.5rem;
+    grid-column: 3 / 5;
+    /* de la línea 3 a la 5 (2 columnas) */
+}
+
+.gato2-2 img {
+    width: 100%;
+    height: 100%;
+}
+
+.gato3-2 {
+    border: 0.2rem solid salmon;
+    width: 20rem;
+    height: 30rem;
+    margin: 0.5rem;
+    grid-column: 1 / 5;   /* ocupa las 4 columnas */
+}
+
+.gato3-2 img {
+    width: 100%;
+    height: 100%;
+}
+
+/* consulta de medios (media queries)
+   Sirve para definir los estilos de los elementos html según el
+   tamaño de la pantalla del dispositivo; con esto se crean
+   páginas web responsivas o adaptables.
+   Si se definen varias consultas de medios se deben poner en forma
+   descendente según la medida del dispositivo.
+   Móviles(<480px), Tablets(480px-960px), PC(960px-1280px)
+*/
+@media screen and (max-width: 1250px) {
+    #encabezado h1 {
+        font-size: 3rem;
     }
-    .gato12 {
-        border: 0.2rem solid yellow;
-        width: 20rem;
-        height: 30rem;
-        margin: 0.5rem;
-        grid-column: 1 / 3;
 
-        .gato12 img{
-
-            width: 100%;
-            height: 100%;
-        }
-
-        .gato22 {
-            border: 0.2rem solid royalblue;
-            width: 20rem;
-            height: 30rem;
-            margin: 0.5rem;
-            grid-column: 3 / 5;
-            z-index: 2;
-
-        }
-        .gato22 img{
-
-            width: 100%;
-            height: 100%;
-        }
-
-        .gato32 {
-            border: 0.2rem solid salmon;
-            width: 20rem;
-            height: 30rem;
-            margin: 0.5rem;
-            grid-column: 1 / 5;
-
-        }
-        .gato33 img{
-
-            width: 100%;
-            height: 100%;
-        }
-
-
-
-
-/*consulta de medios(media queries)
-Sive para definir los estilos o lementos html, segn el
-tamaño de la pantalla de nuestro diaositivo , gracias a esto
-se proporciona una herramienta que nos sirve para la creacion
- de paginas web responsivas o daptables
- si se define varias consultas de medios se debe poner en  fomra descendente
- segu la medida del diapositivo
- moviles(480px).Tables(480px-960px),PC(960px-1280px)
- */
- @media screen and (max-width: 930px) {
-     #encabezado h1 {
-         left: 25%;
-         font-size: 3rem;
-     }
-
-     .logo {
-         height: 22rem;
-
-     }
- }
+    .logo {
+        height: 27rem;
     }
+}
+
+@media screen and (max-width: 930px) {
+    #encabezado h1 {
+        font-size: 3rem;
+    }
+
+    .logo {
+        height: 22rem;
+    }
+}
