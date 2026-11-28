@@ -13,16 +13,28 @@ body {
 #encabezado {
     border: 0.2rem solid lemonchiffon;
     font-size: 2rem;
-    position: sticky;
-    width: 100%;
-    z-index: 5;
-    top: 0;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: center;
+
 }
 
 .logo {
     border: 0.2rem solid azure;
-    width: 20%;
-    height: 30rem;
+    width: 90%;
+    height: 50rem;
+    display: grid;
+    padding: 0.5rem;
+    border-radius: 45%;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: center;
+
+
 
 
 }
@@ -30,29 +42,24 @@ body {
 .logo img {
     width: 100%;
     height: 100%;
-    border-radius: 45%;
+    border-radius: 35%;
 
 }
-
 #encabezado h1 {
     text-align: center;
     text-shadow: 0.2rem 0.2rem 0.5rem indigo;
-    position: absolute;
-    top: 10rem;
-    left: 30%;
+
 }
 
 
 #navegacion ul {
     list-style-type: none;
     padding-left: 0;
-    position:absolute;
-    top: 25%;
-    right: 15%;
     border: 0.2rem solid red;
-    width: 25%;
-    text-align: center;
+    width: 100%;
     font-size: 3rem;
+
+
 
 
 }
@@ -61,23 +68,32 @@ body {
     display: inline-block;
 }
 
-#elementos-posicionados {
+#contenedor-grid{
     border: 0.2rem solid green;
     padding: 1rem;
-    position: relative;
-    height: 200rem;
+    display: grid;
+    /* 1ro se declara la propiedad grid*/
+    /*delcarar las columnas y las filas de nuestra cuadricula, ambas aceptan las medidas fijas
+    y relativas (px en rem)*/
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50rem 50rem;
+   /*propiedades de la cuadricula , star,end,center, space-around, space between
+   ,space evelyn */
+    justify-content: center;
+    align-content: end;
+    /*propiedades de los objetos,( star,end,center, strech*/
+    justify-items: center;
+
 
 }
+
 
 .gato1 {
     border: 0.2rem solid yellow;
-    width: 40rem;
-    height: 50rem;
+    width: 20rem;
+    height: 30rem;
     margin: 0.5rem;
-    position: sticky;
-    top: 15rem;
-    z-index: 1;
-}
+
 .gato1 img{
 
     width: 100%;
@@ -86,13 +102,11 @@ body {
 
 .gato2 {
     border: 0.2rem solid royalblue;
-    width: 40rem;
-    height: 50rem;
+    width: 20rem;
+    height: 30rem;
     margin: 0.5rem;
-    position: absolute;
-    top: 0rem;
-    right: 0rem;
     z-index: 2;
+
 }
 .gato2 img{
 
@@ -102,14 +116,9 @@ body {
 
 .gato3 {
     border: 0.2rem solid salmon;
-    width: 40rem;
-    height: 50rem;
+    width: 20rem;
+    height: 30rem;
     margin: 0.5rem;
-    position: absolute;
-    top: 28rem;
-    bottom: 0rem;
-    left: 0rem;
-    z-index: 2;
 
 }
 .gato3 img{
@@ -120,19 +129,79 @@ body {
 
 .gato4 {
     border: 0.2rem solid green;
-    width: 40rem;
-    height: 50rem;
+    width: 20rem;
+    height: 30rem;
     margin: 0.5rem;
-    position: absolute;
-    bottom: 0rem;
-    right: 0rem;
-
 }
 .gato4 img{
 
     width: 100%;
     height: 100%;
 }
+
+    #contenedor-grid2{
+        border: 0.2rem solid green;
+        padding: 1rem;
+        display: grid;
+        /* 1ro se declara la propiedad grid*/
+        /*delcarar las columnas y las filas de nuestra cuadricula, ambas aceptan las medidas fijas
+        y relativas (px en rem)*/
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 50rem 50rem;
+        /*propiedades de la cuadricula , star,end,center, space-around, space between
+        ,space evelyn */
+        justify-content: center;
+        align-content: end;
+        /*propiedades de los objetos,( star,end,center, strech*/
+        justify-items: center;
+
+
+
+    }
+    .gato12 {
+        border: 0.2rem solid yellow;
+        width: 20rem;
+        height: 30rem;
+        margin: 0.5rem;
+        grid-column: 1 / 3;
+
+        .gato12 img{
+
+            width: 100%;
+            height: 100%;
+        }
+
+        .gato22 {
+            border: 0.2rem solid royalblue;
+            width: 20rem;
+            height: 30rem;
+            margin: 0.5rem;
+            grid-column: 3 / 5;
+            z-index: 2;
+
+        }
+        .gato22 img{
+
+            width: 100%;
+            height: 100%;
+        }
+
+        .gato32 {
+            border: 0.2rem solid salmon;
+            width: 20rem;
+            height: 30rem;
+            margin: 0.5rem;
+            grid-column: 1 / 5;
+
+        }
+        .gato33 img{
+
+            width: 100%;
+            height: 100%;
+        }
+
+
+
 
 /*consulta de medios(media queries)
 Sive para definir los estilos o lementos html, segn el
@@ -153,7 +222,5 @@ se proporciona una herramienta que nos sirve para la creacion
          height: 22rem;
 
      }
-
-
-
  }
+    }

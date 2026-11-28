@@ -1,0 +1,155 @@
+html {
+    font-size: 10px; /* 1rem = 10px */
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    color: rebeccapurple;
+}
+
+#encabezado {
+    border: 0.2rem solid lemonchiffon;
+    font-size: 2rem;
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.logo {
+    border: 0.2rem solid azure;
+    width: 20%;
+    height: 30rem;
+
+
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 45%;
+
+}
+
+#encabezado h1 {
+    text-align: center;
+    text-shadow: 0.2rem 0.2rem 0.5rem indigo;
+    top: 10rem;
+    left: 30%;
+}
+
+
+#navegacion ul {
+    list-style-type: none;
+    padding-left: 0;
+    top: 25%;
+    right: 15%;
+    border: 0.2rem solid red;
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+    display: flex;
+    gap:0.5rem;
+
+
+}
+
+#navegacion ul li{
+    display: inline-block;
+}
+
+#contenedor-flexible{
+    border: 0.2rem solid green;
+    padding: 1rem;
+    height: 200rem;
+    /*display: flex vuelve un contenedor  flexible*/
+    display: flex;
+    /*flex-direction  define el eje principal o main axis
+    en el que va  a trabajar flexbox(row,colum, row-reverse , column-reverse)*/
+    flex-direction: row;
+    /*alig-items:Define el eje cruzado o cross-axis
+    con el que va trabajar flebox*/
+    align-items: start;
+    /*justify content: permite distribuir el eje cruzado o cris-axis con el que trabajar flex box*/
+    justify-content: space-evenly;
+
+}
+
+.gato1 {
+    border: 0.2rem solid yellow;
+    width: 20rem;
+    height: 50rem;
+    margin: 0.5rem;
+}
+.gato1 img{
+
+    width: 100%;
+    height: 100%;
+}
+
+.gato2 {
+    border: 0.2rem solid royalblue;
+    width: 20rem;
+    height: 30rem;
+    margin: 0.5rem;
+
+}
+.gato2 img{
+
+    width: 100%;
+    height: 100%;
+}
+
+.gato3 {
+    border: 0.2rem solid salmon;
+    width: 20rem;
+    height: 30rem;
+    margin: 0.5rem;
+
+}
+.gato3 img{
+
+    width: 100%;
+    height: 100%;
+}
+
+.gato4 {
+    border: 0.2rem solid green;
+    width: 20rem;
+    height: 30rem;
+    margin: 0.5rem;
+
+}
+.gato4 img{
+
+    width: 100%;
+    height: 100%;
+}
+
+/*consulta de medios(media queries)
+Sive para definir los estilos o lementos html, segn el
+tamaño de la pantalla de nuestro diaositivo , gracias a esto
+se proporciona una herramienta que nos sirve para la creacion
+ de paginas web responsivas o daptables
+ si se define varias consultas de medios se debe poner en  fomra descendente
+ segu la medida del diapositivo
+ moviles(480px).Tables(480px-960px),PC(960px-1280px)
+ */
+@media screen and (max-width: 930px) {
+    #encabezado h1 {
+        left: 25%;
+        font-size: 3rem;
+    }
+
+    .logo {
+        height: 22rem;
+
+    }
+
+
+
+}

@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22f7ca56-80c9-48c2-a986-60321cb43c6a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Tarea_13/css/estilos.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Tarea_13/index13.html" afterDir="false" />
-    </list>
+    <list default="true" id="22f7ca56-80c9-48c2-a986-60321cb43c6a" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,7 +49,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/yanel/Documents/TAREAS-PW1-1559-2027/Tarea_13",
+    "last_opened_file_path": "C:/Users/yanel/Documents/TAREAS-PW1-1559-2027/Tarea_12",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -95,6 +91,7 @@
       <workItem from="1794604206927" duration="1892000" />
       <workItem from="1794886580668" duration="3446000" />
       <workItem from="1795036556287" duration="1293000" />
+      <workItem from="1795574907803" duration="763000" />
     </task>
     <servers />
   </component>
